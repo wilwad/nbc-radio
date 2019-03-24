@@ -1,4 +1,4 @@
-$(document).ready(function(){
+var render = function(){
    /* This project creates audio elements on web page for you to play NBC radio streams. 
     * I found the radio stream IP addresses by inspecting code of NBC website (http://www.nbc.na/listen_live.php)
     * William Sengdara (http://github.com/wilwad) 
@@ -20,4 +20,6 @@ $(document).ready(function(){
                           "<td><audio controls src='"+station.ip+"'>Audio not supported</audio></td></tr>"));
      idy++;
    }
- });
+ }
+
+window.setTimeout(render, 0);
